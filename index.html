@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudBox - Pricing Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">CloudBox</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#plans">Plans</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Heading Section -->
+    <section class="heading">
+        <h1>Simple Cloud Storage Plans</h1>
+        <p>
+            Store your files safely and access them from anywhere.
+        </p>
+
+        <div class="toggle">
+            <button onclick="monthly()">Monthly</button>
+            <button onclick="yearly()">Yearly</button>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section class="cards" id="plans">
+
+        <!-- Student Plan -->
+        <div class="card">
+
+            <h2>Student</h2>
+            <p class="description">
+                For students and personal use
+            </p>
+
+            <div class="price">
+                ₹<span id="studentPrice">99</span>
+                <small>/month</small>
+            </div>
+
+            <ul>
+                <li>✓ 20 GB Cloud Storage</li>
+                <li>✓ 1 User Account</li>
+                <li>✓ Mobile Access</li>
+                <li>✓ Email Support</li>
+            </ul>
+
+            <button
+                class="plan-btn"
+                onclick="choosePlan('Student')">
+                Select Plan
+            </button>
+
+        </div>
+
+
+        <!-- Pro Plan -->
+        <div class="card pro">
+
+            <span class="popular">Most Popular</span>
+
+            <h2>Pro</h2>
+            <p class="description">
+                For professionals and freelancers
+            </p>
+
+            <div class="price">
+                ₹<span id="proPrice">299</span>
+                <small>/month</small>
+            </div>
+
+            <ul>
+                <li>✓ 100 GB Cloud Storage</li>
+                <li>✓ 3 User Accounts</li>
+                <li>✓ File Sharing</li>
+                <li>✓ Priority Support</li>
+            </ul>
+
+            <button
+                class="plan-btn"
+                onclick="choosePlan('Pro')">
+                Select Plan
+            </button>
+
+        </div>
+
+
+        <!-- Business Plan -->
+        <div class="card">
+
+            <h2>Business</h2>
+            <p class="description">
+                For teams and small businesses
+            </p>
+
+            <div class="price">
+                ₹<span id="businessPrice">599</span>
+                <small>/month</small>
+            </div>
+
+            <ul>
+                <li>✓ 500 GB Cloud Storage</li>
+                <li>✓ 10 User Accounts</li>
+                <li>✓ Advanced File Sharing</li>
+                <li>✓ 24/7 Support</li>
+            </ul>
+
+            <button
+                class="plan-btn"
+                onclick="choosePlan('Business')">
+                Select Plan
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 CloudBox. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
